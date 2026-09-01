@@ -297,7 +297,8 @@ Customer-Churn-Analysis/
 Add a screenshot of your Power BI dashboard here.
 
 ```markdown
-![Churn Dataset Dashboard.].(https://github.com/user-attachments/assets/acdf8513-8fcd-4b1d-8139-f667d1b7c8ac)
+<img width="1432" height="798" alt="Churn Dataset Dashboard" src="https://github.com/user-attachments/assets/1c07f9b1-7fbb-42c9-93a7-026fd372992d" />
+
 
 
 
