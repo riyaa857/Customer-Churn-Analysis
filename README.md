@@ -273,6 +273,8 @@ Used for:
 
 # Dashboard Interaction <a href="https://github.com/riyaa857/Customer-Churn-Analysis/blob/main/Churn%20Dataset%20Dashboard.png">View Dashboard</a>
 
+---
+
 # 📁 Repository Structure
 
 ```text
