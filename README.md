@@ -74,8 +74,6 @@ Used for data cleaning, preprocessing, exploratory data analysis, and visualizat
 
 * Pandas
 * NumPy
-* Matplotlib
-* Seaborn
 
 ### SQL
 
