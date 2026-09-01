@@ -1,266 +1,277 @@
-# 📊 Customer Churn Analysis
+# 📊 Customer Churn Analysis – Power BI
 
 ## 📌 Project Overview
 
-Customer churn is a major challenge for businesses because losing existing customers can significantly impact revenue and growth.
+Customer churn is an important business problem that can directly impact revenue and customer growth. Understanding why customers leave helps businesses develop effective strategies to improve customer retention.
 
-This project analyzes a dataset of **7,043 customers** to understand customer behavior, identify patterns associated with churn, and determine the key factors that influence customer retention.
+In this project, I analyzed a dataset containing **7,043 customer records** using **Microsoft Power BI**.
 
-The analysis was performed using **Python, SQL, and Power BI**, covering data cleaning, exploratory data analysis, SQL-based analysis, and interactive dashboard development.
+The complete data preparation and transformation process was performed within **Power BI using Power Query**. After transforming the data, I created interactive visualizations and KPIs to analyze customer churn patterns and identify the factors associated with customer attrition.
 
-The ultimate goal of this project is to transform raw customer data into **meaningful business insights** that can help organizations reduce churn and improve customer retention.
+The dashboard provides a clear and interactive view of customer demographics, services, contracts, payment methods, tenure, and charges in relation to customer churn.
 
 ---
 
-## 🎯 Objectives
+## 🎯 Project Objectives
 
-The main objectives of this project are:
+The main objectives of this project were to:
 
-* Analyze customer demographics and service usage.
-* Understand the overall customer churn rate.
-* Identify factors associated with customer churn.
-* Analyze churn across different customer segments.
-* Understand the relationship between tenure and churn.
-* Analyze the impact of contract type on customer retention.
-* Study the relationship between monthly charges and churn.
-* Identify high-risk customer segments.
-* Create an interactive Power BI dashboard.
-* Provide actionable insights for improving customer retention.
+* Analyze customer churn among 7,043 customers.
+* Calculate and understand the overall churn rate.
+* Identify customer segments with higher churn.
+* Analyze churn based on contract type.
+* Understand the relationship between customer tenure and churn.
+* Analyze churn based on payment methods.
+* Study the impact of monthly charges on customer churn.
+* Analyze churn across different services and customer demographics.
+* Create an interactive dashboard using Power BI.
+* Generate meaningful business insights from customer data.
 
 ---
 
 ## 📂 Dataset
 
-The dataset contains information about **7,043 customers**.
+The dataset contains information about **7,043 customers** and includes demographic, service, and account-related information.
 
-It includes customer information such as:
+### Major Data Categories
 
-* Customer demographics
+**Customer Information**
+
+* Customer ID
 * Gender
-* Senior citizen status
-* Partner status
+* Senior Citizen
+* Partner
 * Dependents
+
+**Services**
+
+* Phone Service
+* Multiple Lines
+* Internet Service
+* Online Security
+* Online Backup
+* Device Protection
+* Tech Support
+* Streaming TV
+* Streaming Movies
+
+**Account Information**
+
 * Tenure
-* Phone services
-* Internet services
-* Online security
-* Online backup
-* Device protection
-* Tech support
-* Streaming services
-* Contract type
-* Payment method
-* Monthly charges
-* Total charges
-* Churn status
+* Contract
+* Paperless Billing
+* Payment Method
+* Monthly Charges
+* Total Charges
 
-### Dataset Size
+**Target Variable**
 
-| Metric          |                   Value |
-| --------------- | ----------------------: |
-| Total Customers |                   7,043 |
-| Target Variable |                   Churn |
-| Analysis Type   | Customer Churn Analysis |
+* Churn
 
 ---
 
-## 🛠️ Tools & Technologies
-
-### Python
-
-Used for data cleaning, preprocessing, exploratory data analysis, and visualization.
-
-**Libraries:**
-
-* Pandas
-* NumPy
-
-### SQL
-
-Used to perform structured analysis and answer business-related questions such as:
-
-* Which customer segments have the highest churn?
-* How does churn vary by contract type?
-* What is the relationship between tenure and churn?
-* Which payment methods are associated with higher churn?
-
-### Power BI
-
-Used to create an interactive dashboard for visualizing:
-
-* Customer demographics
-* Churn rate
-* Customer segments
-* Contract analysis
-* Tenure analysis
-* Monthly charges
-* Services
-* Payment methods
-
----
-
-## 🔄 Project Workflow
+# 🔄 Project Workflow
 
 ```text
-Raw Dataset
-     ↓
-Data Cleaning & Preprocessing
-     ↓
-Exploratory Data Analysis
-     ↓
-SQL Analysis
-     ↓
-Power BI Dashboard
-     ↓
-Business Insights
-     ↓
-Customer Retention Recommendations
+Raw Customer Dataset
+        ↓
+Import Data into Power BI
+        ↓
+Data Transformation using Power Query
+        ↓
+Data Cleaning & Preparation
+        ↓
+Data Modeling
+        ↓
+DAX Measures & Calculations
+        ↓
+Interactive Dashboard
+        ↓
+Data Analysis & Business Insights
 ```
 
 ---
 
-## 🧹 Data Cleaning & Preprocessing
+# 🧹 Data Transformation – Power Query
 
-The dataset was prepared before performing the analysis.
+The dataset was imported directly into **Power BI**, and the data preparation process was performed using **Power Query**.
 
-Major preprocessing steps included:
+### Key Transformation Steps
 
-* Checking for missing values.
-* Identifying duplicate records.
-* Correcting data types.
-* Handling inconsistent values.
-* Converting numerical columns into appropriate data types.
-* Creating useful calculated fields.
-* Preparing the dataset for SQL and Power BI analysis.
+* Checked the dataset for missing and inconsistent values.
+* Changed columns to appropriate data types.
+* Cleaned and standardized categorical values.
+* Transformed numerical fields where required.
+* Removed unnecessary columns.
+* Checked customer records for data quality.
+* Prepared the data for analysis and visualization.
+
+All major data transformation steps were performed within **Power BI**, without using Excel for data preparation.
 
 ---
 
-## 📊 Exploratory Data Analysis
+# 📐 Data Analysis & DAX
 
-Python was used to explore the dataset and identify important patterns.
+After transforming the data, **DAX (Data Analysis Expressions)** was used to create important calculations and KPIs.
 
-The analysis focused on:
+### Key Metrics
 
-### Customer Demographics
+* Total Customers
+* Churned Customers
+* Active Customers
+* Churn Rate
+* Average Monthly Charges
+* Total Charges
+* Average Customer Tenure
+
+These measures were used throughout the dashboard to provide dynamic and interactive analysis.
+
+---
+
+# 📊 Power BI Dashboard
+
+The final dashboard provides an interactive overview of customer churn.
+
+### Dashboard KPIs
+
+| KPI                 | Purpose                                   |
+| ------------------- | ----------------------------------------- |
+| 👥 Total Customers  | Total number of customers                 |
+| ❌ Churned Customers | Number of customers who left              |
+| ✅ Active Customers  | Number of customers who stayed            |
+| 📊 Churn Rate       | Percentage of customers who churned       |
+| 💰 Monthly Charges  | Revenue generated through monthly charges |
+| ⏳ Average Tenure    | Average duration customers stayed         |
+
+---
+
+## 🔍 Dashboard Analysis
+
+The dashboard analyzes churn across multiple dimensions.
+
+### 👥 Customer Demographics
 
 * Gender
-* Senior citizen status
+* Senior Citizen
 * Partner
 * Dependents
 
-### Customer Services
+### 📄 Contract Analysis
 
-* Internet service
-* Phone service
-* Online security
-* Tech support
-* Streaming services
+Churn is analyzed based on:
 
-### Customer Account Information
+* Month-to-month contracts
+* One-year contracts
+* Two-year contracts
 
-* Tenure
-* Contract type
-* Payment method
-* Monthly charges
-* Total charges
+### 🌐 Service Analysis
 
-### Churn Analysis
+The dashboard examines churn across:
 
-Customer churn was analyzed across different demographic, service, and account-related factors.
+* Internet Service
+* Phone Service
+* Online Security
+* Online Backup
+* Device Protection
+* Tech Support
+* Streaming Services
 
----
+### 💳 Payment Analysis
 
-## 🗄️ SQL Analysis
+Customer churn is analyzed based on different payment methods.
 
-SQL was used to answer important business questions from the dataset.
+### 💰 Charges Analysis
 
-Some of the questions analyzed include:
+The dashboard analyzes:
 
-1. What is the total number of customers?
-2. How many customers have churned?
-3. What is the overall churn rate?
-4. Which contract type has the highest churn?
-5. Does customer tenure affect churn?
-6. Which payment method has the highest churn?
-7. How does monthly charge affect churn?
-8. Which internet service customers are more likely to churn?
-9. How does churn vary between senior and non-senior customers?
-10. Which customer segments are at higher risk of churn?
+* Monthly Charges
+* Total Charges
+* Relationship between charges and churn
+
+### ⏳ Tenure Analysis
+
+Customer tenure is analyzed to understand whether customers with shorter or longer relationships with the company are more likely to churn.
 
 ---
 
-## 📈 Power BI Dashboard
+# 💡 Key Insights
 
-An interactive Power BI dashboard was created to provide a clear overview of customer churn.
+The analysis helps identify customer groups that are more vulnerable to churn.
 
-### Key Dashboard KPIs
+Some of the major areas highlighted through the dashboard include:
 
-* 👥 Total Customers
-* ❌ Churned Customers
-* 📊 Churn Rate
-* 💰 Monthly Charges
-* 💵 Total Revenue / Charges
-* ⏳ Average Customer Tenure
+* Customers with **shorter tenure** can represent a higher-risk segment.
+* **Month-to-month customers** can have higher churn compared with customers on longer contracts.
+* Customers with **higher monthly charges** may show different churn behavior.
+* Churn can vary significantly across different **payment methods**.
+* Certain combinations of **internet and additional services** can be associated with different churn levels.
+* Customer demographics and account characteristics can help identify potential high-risk segments.
 
-### Dashboard Analysis
-
-The dashboard provides insights into:
-
-* Overall churn performance
-* Churn by contract type
-* Churn by tenure
-* Churn by payment method
-* Churn by internet service
-* Churn by demographic groups
-* Monthly charges and churn
-* Customer service usage
+> **Note:** The exact percentages and values should be based on the final results displayed in the Power BI dashboard.
 
 ---
 
-## 🔍 Key Insights
-
-The analysis helps identify customer groups that are more likely to churn.
-
-Some important areas investigated include:
-
-* Customers with **shorter tenure**.
-* Customers on **month-to-month contracts**.
-* Customers with **higher monthly charges**.
-* Customers using certain **payment methods**.
-* Customers with specific **internet/service combinations**.
-* Customers who do not subscribe to certain support or security services.
-
-> **Note:** The exact findings and percentages should be updated according to the results obtained from your analysis.
-
----
-
-## 💡 Business Recommendations
+# 💼 Business Recommendations
 
 Based on the analysis, businesses can consider the following strategies:
 
-### 1. Target High-Risk Customers
+### 1. 🎯 Focus on High-Risk Customers
 
-Identify customers with characteristics strongly associated with churn and provide targeted retention offers.
+Identify customers with characteristics associated with higher churn and develop targeted retention strategies.
 
-### 2. Encourage Long-Term Contracts
+### 2. 📄 Encourage Long-Term Contracts
 
-Offer incentives for customers to move from month-to-month plans to longer-term contracts.
+Provide incentives, discounts, or additional benefits to encourage customers to move from month-to-month contracts to longer-term plans.
 
-### 3. Improve Early Customer Experience
+### 3. 🤝 Improve Customer Onboarding
 
-Customers in their initial months can be given additional onboarding and support to improve retention.
+Customers in the early stages of their relationship can be provided with better onboarding, guidance, and support.
 
-### 4. Personalized Offers
+### 4. 💰 Provide Personalized Pricing
 
-Use customer behavior and service usage to provide personalized plans and discounts.
+Analyze customers with high monthly charges and provide personalized plans or offers where appropriate.
 
-### 5. Improve Customer Support
+### 5. 🛠️ Strengthen Customer Support
 
-Customers experiencing service-related issues can be proactively contacted before they decide to leave.
+Improve technical support and service quality for customers who may be at greater risk of leaving.
 
 ---
 
-## 📁 Project Structure
+# 🛠️ Tools & Technologies
+
+### Microsoft Power BI
+
+Used for:
+
+* Data Import
+* Data Transformation
+* Data Modeling
+* DAX Calculations
+* Data Visualization
+* Dashboard Development
+* Business Intelligence
+
+### Power Query
+
+Used for:
+
+* Data Cleaning
+* Data Transformation
+* Data Type Conversion
+* Data Preparation
+
+### DAX
+
+Used for:
+
+* KPI calculations
+* Measures
+* Churn analysis
+* Dynamic dashboard calculations
+
+---
+
+# 📁 Repository Structure
 
 ```text
 Customer-Churn-Analysis/
@@ -268,82 +279,52 @@ Customer-Churn-Analysis/
 ├── Dataset/
 │   └── customer_churn.csv
 │
-├── Python/
-│   └── customer_churn_analysis.ipynb
-│
-├── SQL/
-│   └── customer_churn_analysis.sql
-│
 ├── PowerBI/
-│   └── customer_churn_dashboard.pbix
+│   └── Customer_Churn_Analysis.pbix
 │
-├── Images/
-│   └── dashboard.png
+├── Screenshots/
+│   └── Customer_Churn_Dashboard.png
 │
 └── README.md
 ```
 
 ---
 
-## 📊 Sample Analysis Questions
+# 📸 Dashboard Preview
 
-This project can be used to demonstrate the following data analytics skills:
+Add a screenshot of your Power BI dashboard here.
 
-```text
-✔ Data Cleaning
-✔ Exploratory Data Analysis
-✔ SQL Querying
-✔ Data Visualization
-✔ Power BI Dashboard Development
-✔ KPI Analysis
-✔ Customer Segmentation
-✔ Business Intelligence
-✔ Business Insights
-✔ Data-Driven Decision Making
+```markdown
+![Customer Churn Dashboard](Screenshots/Customer_Churn_Dashboard.png)
 ```
 
 ---
 
-## 🚀 Skills Demonstrated
+# 🚀 Skills Demonstrated
 
-**Programming & Analysis**
-
-* Python
-* Pandas
-* NumPy
-
-**Database**
-
-* SQL
-* Data Aggregation
-* Filtering
-* GROUP BY
-* JOINs
-* CASE Statements
-* Subqueries
-
-**Visualization**
-
-* Power BI
-* Matplotlib
-* Seaborn
-
-**Analytics**
-
-* Exploratory Data Analysis
-* Customer Segmentation
-* Churn Analysis
-* KPI Development
-* Business Analysis
+```text
+Power BI
+Power Query
+DAX
+Data Cleaning
+Data Transformation
+Data Modeling
+Data Visualization
+KPI Development
+Customer Segmentation
+Churn Analysis
+Business Intelligence
+Business Analytics
+Data-Driven Decision Making
+```
 
 ---
 
-## 📌 Project Outcome
+# 📌 Project Outcome
 
-This project demonstrates an end-to-end **Data Analytics workflow**, starting from raw customer data and progressing through:
+This project demonstrates an end-to-end **Power BI data analytics workflow**, from importing and transforming raw customer data to building an interactive dashboard and generating business insights.
 
-**Data Cleaning → EDA → SQL Analysis → Visualization → Business Insights**
+The analysis of **7,043 customers** helps identify customer segments associated with higher churn and provides insights that can support better **customer retention strategies**.
 
-The analysis provides a data-driven approach to understanding customer churn and identifying opportunities for improving **customer retention and business performance**.
-
+---
 
